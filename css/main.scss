@@ -1,0 +1,241 @@
+$cyan: hsl(180, 66%, 49%);
+$darkViolet: hsl(257, 27%, 26%);
+$red: hsl(0, 87%, 67%);
+$gray: hsl(0, 0%, 75%);
+$grayishViolet: hsl(257, 7%, 63%);
+$veryDarkBlue: hsl(255, 11%, 22%);
+$veryDarkViolet: hsl(260, 8%, 14%);
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.landing {
+  header {
+    li {
+      cursor: pointer;
+      color: $grayishViolet;
+      font-weight: 700;
+    }
+    .right {
+      li:last-of-type {
+        color: white;
+        background-color: $cyan;
+        padding: 10px 30px;
+        border-radius: 25px;
+      }
+    }
+  }
+  .intro {
+    .text {
+      flex: 2;
+      h1 {
+        font-weight: 700;
+        color: $veryDarkViolet;
+        font-size: 80px;
+        @media (max-width: 992px) {
+          font-size: 50px;
+        }
+      }
+      p {
+        color: $grayishViolet;
+      }
+      button {
+        color: white;
+        background-color: $cyan;
+        padding: 10px 30px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        margin-top: 20px;
+      }
+    }
+    figure {
+      flex: 1;
+      margin-right: -70px;
+      @media (max-width: 992px) {
+        margin-right: 0;
+      }
+      img {
+        @media (max-width: 992px) {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+.short {
+  background-image: linear-gradient(180deg, white 50%, #eff1f7 50%);
+  form {
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-size: cover;
+    width: 100%;
+    background-color: $darkViolet;
+    padding: 50px;
+    @media (max-width: 992px) {
+      padding: 50px 10px;
+    }
+    .input {
+      width: 80%;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+    input {
+      height: 60px;
+      border-radius: 10px;
+      border: none;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .invalid {
+      display: none;
+    }
+    button {
+      color: white;
+      background-color: $cyan;
+      padding: 0 30px;
+      height: 60px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-weight: 700;
+      font-size: 18px;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+  .invalid {
+    color: $red;
+  }
+}
+.shorted {
+  background-color: #eff1f7;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .container {
+    background-color: white;
+    padding: 25px;
+    @media (max-width: 992px) {
+      margin-bottom: 20px;
+    }
+    .shortedLink {
+      color: $cyan;
+      text-decoration: none;
+    }
+    .copy {
+      display: block;
+    }
+    button {
+      color: white;
+      background-color: $cyan;
+      padding: 10px 30px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+    .copied {
+      background-color: $darkViolet;
+      display: none;
+    }
+  }
+}
+.statistics {
+  background-color: #eff1f7;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  h2 {
+    font-weight: 700;
+    color: $veryDarkViolet;
+  }
+  p.text {
+    color: $grayishViolet;
+    margin-bottom: 60px;
+  }
+  .boxes {
+    .line {
+      height: 10px;
+      width: 600px;
+      background-color: $cyan;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      @media (max-width: 992px) {
+        transform: rotate(90deg) translateX(-50%);
+        transform-origin: left;
+      }
+    }
+    .box {
+      position: relative;
+      background-color: white;
+      padding: 100px 30px 30px;
+      figure {
+        background-color: #3b3054;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        top: 0;
+        position: absolute;
+        transform: translateY(-50%);
+      }
+      h3 {
+        font-weight: 700;
+      }
+      &:nth-of-type(3) {
+        transform: translateY(10%);
+      }
+      &:nth-of-type(4) {
+        transform: translateY(20%);
+      }
+    }
+  }
+}
+.boost {
+  padding: 80px;
+  background-color: $darkViolet;
+  background-image: url(../images/bg-boost-desktop.svg);
+  background-size: cover;
+  h2 {
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  button {
+    color: white;
+    background-color: $cyan;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+  }
+}
+footer {
+  background-color: $veryDarkViolet;
+  padding: 100px 0;
+  color: white;
+  .container {
+    gap: 300px;
+    @media (max-width: 992px) {
+          gap: 50px;
+    }
+  }
+  .logo {
+    img {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg)
+        brightness(107%) contrast(104%);
+    }
+  }
+  .lists {
+    justify-content: space-between;
+    width: 100%;
+  }
+  h4 {
+    font-weight: 700;
+  }
+}

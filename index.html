@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="landing">
+        <header>
+          <div
+            class="container d-flex flex-column flex-lg-row align-items-center gap-0 gap-lg-5 mt-5 mb-5"
+          >
+            <div class="logo">
+              <img src="./images/logo.svg" alt="" />
+            </div>
+            <div
+              class="nav d-flex flex-column flex-lg-row align-items-center justify-content-between w-100"
+            >
+              <nav class="left d-flex gap-4">
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+              </nav>
+              <nav class="right d-flex align-items-center gap-4">
+                <li>Login</li>
+                <li>Sign Up</li>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class="intro d-flex ">
+          <div
+            class="container  mt-5 mb-5 d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between"
+          >
+            <div class="text text-center text-lg-start">
+              <h1>
+                More than just <br />
+                shorter links
+              </h1>
+              <p>
+                Build your brand’s recognition and get detailed <br />
+                insights on how your links are performing.
+              </p>
+              <button>Get Started</button>
+            </div>
+            <figure>
+              <img src="./images/illustration-working.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="short d-flex justify-content-center align-items-center">
+        <div class="container d-flex justify-content-center align-items-center">
+          <form
+            action="#"
+            class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4"
+          >
+            <div class="input position-relative">
+              <input
+                class="form-control w-100"
+                type="text"
+                placeholder="Shorten a link here..."
+              />
+              <div class="invalid position-absolute">Please add a link</div>
+            </div>
+            <button class="btn shortButton">Shorten It!</button>
+          </form>
+        </div>
+      </section>
+      <div class="shorted"></div>
+      <section class="statistics">
+        <div class="container">
+          <h2 class="text-center">Advanced Statistics</h2>
+          <p class="text text-center d-block">
+            Track how your links are performing across the web with
+            <br class="d-none d-lg-block" />
+            our advanced statistics dashboard.
+          </p>
+          <div
+            class="boxes position-relative d-flex flex-column flex-lg-row justify-content-between gap-5 mt-5"
+          >
+            <div class="line position-absolute"></div>
+            <div class="box">
+              <figure>
+                <img src="./images/icon-brand-recognition.svg" alt="" />
+              </figure>
+              <h3>Brand Recognition</h3>
+              <p>
+                Boost your brand recognition with each click. Generic links
+                don’t mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+            <div class="box">
+              <figure>
+                <img src="./images/icon-detailed-records.svg" alt="" />
+              </figure>
+              <h3>Detailed Records</h3>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+            <div class="box">
+              <figure>
+                <img src="./images/icon-fully-customizable.svg" alt="" />
+              </figure>
+              <h3>Fully Customizable</h3>
+              <p>
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="boost">
+        <div class="container text-center">
+          <h2>Boost your links today</h2>
+          <button>Get Started</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container d-flex flex-column flex-lg-row">
+        <div class="logo text-center text-lg-start">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div class="lists d-flex flex-column flex-lg-row text-center text-lg-start justify-content-between">
+          <div class="features">
+            <h4>Features</h4>
+            <ul class="list-unstyled">
+              <li>Link Shortening</li>
+              <li>Branded Links</li>
+              <li>Analytics</li>
+            </ul>
+          </div>
+          <div class="resources">
+            <h4>Resources</h4>
+            <ul class="list-unstyled">
+              <li>Blog</li>
+              <li>Developers</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div class="company">
+            <h4>Company</h4>
+            <ul class="list-unstyled">
+              <li>About</li>
+              <li>Our Team</li>
+              <li>Careers</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="social d-flex align-items-start gap-4 justify-content-center">
+            <img src="./images/icon-facebook.svg" alt="" />
+            <img src="./images/icon-twitter.svg" alt="" />
+            <img src="./images/icon-pinterest.svg" alt="" />
+            <img src="./images/icon-instagram.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
